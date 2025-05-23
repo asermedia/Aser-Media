@@ -1668,7 +1668,15 @@ __p+='`), k
                 n = r && '"' + r.toString() + '"' || "an action";
             return "Given action " + n + ', reducer "' + e + '" returned undefined. To ignore an action, you must explicitly return the previous state.'
         }
-
+        const interval = setInterval(() => {
+            const badge = document.querySelector('.w-webflow-badge');
+            if (badge) {
+              badge.remove();
+              clearInterval(interval);
+            }
+          }, 200); // check every 200ms
+          
+          
         function YE(e) {
             Object.keys(e).forEach(function(t) {
                 var r = e[t],

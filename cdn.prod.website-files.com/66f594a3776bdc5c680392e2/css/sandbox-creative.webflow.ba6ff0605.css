@@ -193,6 +193,8 @@ optgroup {
     font-weight: bold;
 }
 
+
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -331,8 +333,12 @@ pre.w-code-block code {
 .w-optimization {
     display: contents;
 }
+.w-webflow-badge {
+    display: none !important;
+  }
+  
 
-/* .w-webflow-badge,
+.w-webflow-badge,
 .w-webflow-badge * {
     z-index: auto;
     visibility: visible;
@@ -412,7 +418,7 @@ pre.w-code-block code {
     opacity: 1 !important;
     vertical-align: middle !important;
     display: inline-block !important;
-} */
+}
 
 h1,
 h2,
